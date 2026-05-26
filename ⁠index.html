@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERN TO FON 🐷🐻</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            background-color: #ffebee;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr;
+            margin: 0;
+            min-height: 100vh;
+            padding: 40px 0;
+            place-items: center;
+            font-family: 'Noto Sans Lao', 'Comfortaa', sans-serif;
+            overflow-x: hidden;
+        }
+        .slide-container {
+            background-color: #ffffff;
+            border-radius: 40px;
+            box-shadow: 0 20px 40px rgba(255, 143, 177, 0.25);
+            display: flex;
+            flex-direction: column;
+            height: 720px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 50px 60px;
+            position: relative;
+            width: 1280px;
+            border: 6px solid #f8bbd0;
+        }
+        .slide-container::before { content: '☁️'; position: absolute; font-size: 90px; top: 20px; left: 40px; opacity: 0.15; }
+        .slide-container::after { content: '✨'; position: absolute; font-size: 70px; bottom: 30px; right: 40px; opacity: 0.25; }
+        h1, h2, h3 { color: #880e4f; margin: 0; }
+        h1 { font-size: 85px; text-align: center; font-weight: 700; letter-spacing: 2px; }
+        .slide-title { font-size: 45px; margin-bottom: 25px; border-bottom: 5px dashed #f48fb1; display: inline-block; padding-bottom: 5px; }
+        p { font-size: 26px; line-height: 1.6; color: #ad1457; text-indent: 30px; }
+        .content-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: center; width: 100%; z-index: 2; }
+        .two-column { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+        .emoji-wrapper {
+            background-color: #fdf2f8; border-radius: 35px; height: 450px; border: 6px dashed #f9a8d4;
+            display: flex; align-items: center; justify-content: center; font-size: 150px;
+            box-shadow: inset 0 0 20px rgba(249, 168, 212, 0.2); animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .btn-group { display: flex; gap: 40px; justify-content: center; margin-top: 40px; position: relative; height: 90px; width: 100%; }
+        .btn {
+            padding: 15px 60px; border-radius: 50px; font-size: 30px; font-weight: bold; cursor: pointer;
+            transition: all 0.2s ease; border: none; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 0 #c2185b;
+        }
+        .btn-yes { background-color: #ec407a; color: white; }
+        .btn-yes:hover { transform: scale(1.1); background-color: #d81b60; }
+        .btn-no { background-color: #f8bbd0; color: #ad1457; position: absolute; box-shadow: 0 8px 0 #f06292; left: 680px; top: 0; }
+        #success-screen {
+            display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: #fffdfa; z-index: 100; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-radius: 34px;
+        }
+        .heart-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: url('https://www.transparenttextures.com/patterns/hearts.png'); opacity: 0.15; z-index: 1; }
+    </style>
+</head>
+<body>
+
+<div class="slide-container" id="slide1">
+    <div class="content-area" style="text-align: center;">
+        <div style="font-size: 180px; margin-bottom: 20px; animation: float 3s ease-in-out infinite;">💌</div>
+        <h1>PERN TO FON 🐷🐻</h1>
+        <p style="font-size: 32px; font-weight: bold; text-align: center; text-indent: 0; margin-top: 10px; color: #f43f5e;">ຂ້ອຍມີຄວາມໃນໃຈຢากບອກເຈົ້າໃດ໋... 💕</p>
+    </div>
+</div>
+
+<div class="slide-container" id="slide2">
+    <h2 class="slide-title">❤️ ຈຸດເລີ່ມຕົ້ນຂອງເຮົາ</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <p style="text-indent: 40px; font-size: 28px;">ລົມກັນມາໄດ້ເດືອນປາຍແລ້ວເນາະ... ມັນອາດຊິເປັນຊ່ວງເວລາທີ່ບໍ່ດົນປານໃດ ແຕ່ສຳລັບຂ້ອຍ ມັນມີຄ່າຫຼາຍແທ້ໆ.</p>
+            </div>
+            <div class="emoji-wrapper">💬💕</div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide3">
+    <h2 class="slide-title">🌱 ສິ່ງທີ່ຂ້ອຍໄດ້ທົບທວນ</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="emoji-wrapper">💭💫</div>
+            <div>
+                <p>ຂ້ອຍໄດ້ທົບທວນໂຕເອງ, ໄດ້ຮຽນຮູ້ ແລະ ເຕີບໃຫຍ່ຂຶ້ນຫຼາຍ. ข້ອຍຮູ້ວ່າອະດີດຂ້ອຍເຄີຍເຮັດຜິດພາດ ເຮັດໃຫ້ເຈົ້າຕ້ອງລະແວງ ແລະ ບໍ່ສະບາຍໃຈ.</p>
+                <p style="font-weight: bold; color: #e11d48; margin-top: 25px;">ຂ້ອຍຂໍໂທດອີ່ຫຼີເດີ້ທີ່ເຮັດໃຫ້ບໍ່ສະບายໃຈ 🤍</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide4">
+    <h2 class="slide-title">✨ ความຮູ້ສຶກທີ່ຊັດເຈນ</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div>
+                <p>ແຕ່ຂ້ອຍໝັ້ນໃຈໃນຄວາມຮູ້ສຶກໂຕເອງ 100% ແລ້ວ ວ່າຂ້ອຍຢາກມີເຈົ້າຢູ່ຂ້າງໆ. ຂ້ອຍບໍ່ຢາກເປັນແຄ່ຄົນຄຸຍທີ່ບໍ່ມີສະຖານະແບບນີ້ແລ້ວໃດ໋...</p>
+            </div>
+            <div class="emoji-wrapper">💯🔒</div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide5">
+    <h2 class="slide-title">🐻 ພື້ນທີ່ສະບາຍໃຈຂອງ Fon</h2>
+    <div class="content-area">
+        <div class="two-column">
+            <div class="emoji-wrapper">🏡🌸</div>
+            <div>
+                <p style="font-size: 28px; line-height: 1.8;">ຂ້ອຍພ້ອມຊິເປັນຄົນທີ່ใจເຢັນຂຶ້ນ, ໝັ້ນຄົງ ແລະ ເປັນພື້ນທີ່ສະບາຍໃຈໃຫ້ເຈົ້າໃນທຸກໆມື້ເດີ້ Fon 🤍</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide-container" id="slide6">
+    <div class="heart-bg"></div>
+    <div class="content-area" style="text-align: center; position: relative;">
+        <div style="font-size: 100px; margin-bottom: 10px;">🐷💞🐻</div>
+        <p style="font-size: 32px; font-weight: bold; color: #9d174d; text-indent: 0; margin-bottom: 10px;">
+            ອ່ານມາຮອດໜ້ານີ້ແລ້ວ... ຫ້າມກົດປິດໃດ໋! 😜
+        </p>
+        <h2 style="font-size: 60px; margin-bottom: 30px; color: #db2777; font-weight: 700;">'ເຮົາມາກັບມາເປັນແຟນກັນໃໝ່เນາະ' 💕</h2>
+        <div class="btn-group" id="btn-container">
+            <button class="btn btn-yes" onclick="showSuccess()">ຕົກລົງ ✅</button>
+            <button class="btn btn-no" id="no-btn" onmouseover="moveButton()" onclick="moveButton()">ບໍ່ຕົກລົງ ❌</button>
+        </div>
+    </div>
+    <div id="success-screen">
+        <div style="font-size: 160px;">💖🎉✨</div>
+        <h1 style="color: #db2777; font-size: 75px; font-weight: 700; padding: 0 20px;">ຂອບໃຈເດີ້ແຟນທີ່ໃຫ້ໂອກາດ🤍</h1>
+        <p style="font-size: 35px; margin-top: 20px; font-weight: bold; color: #9d174d; text-indent: 0;">Pern ຮັກ Fon ເດີ້ 🐷🐻</p>
+    </div>
+</div>
+
+<script>
+    function moveButton() {
+        const btn = document.getElementById('no-btn');
+        const container = document.getElementById('slide6');
+        const maxX = container.clientWidth - btn.clientWidth - 120;
+        const maxY = container.clientHeight - btn.clientHeight - 120;
+        const randomX = Math.floor(Math.random() * maxX) + 40;
+        const randomY = Math.floor(Math.random() * maxY) + 40;
+        btn.style.left = randomX + 'px';
+        btn.style.top = randomY + 'px';
+        btn.style.position = 'absolute';
+    }
+    function showSuccess() { document.getElementById('success-screen').style.display = 'flex'; }
+</script>
+
+</body>
+</html>
